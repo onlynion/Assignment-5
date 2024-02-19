@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Bus Ticketing</title>
+    <title>Assignment-5</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Daisy Ui and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
+     <!-- This is header section -->
+     <header class="px-3 lg:w-5/6 mt-0 mb-0 mr-auto ml-auto">
+      <!-- This is nav bar section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <a class="font-extrabold text-4xl">V-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="group"><a class="group-hover:text-red-500 font-bold text-base">Home</a></li>
+                <li class="group"><a class="group-hover:text-red-500 font-bold text-base">About</a></li>
+                <li class="group"><a class="group-hover:text-red-500 font-bold text-base">Destination</a></li>
+                <li class="group"><a class="group-hover:text-red-500 font-bold text-base">Search</a></li>
+              </ul>    
+            </div>
+            <div class="navbar-end">
+              <button class="btn text-green-500 bg-[#1dd1001a]">
+                Bus
+                <img src="./images/bus-icon.png" alt="">
+              </button>
+            </div>
+          </div>
+          <!-- This is banner section -->
+          <div class="hero min-h-screen " style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">End-to-End travel with <br><span class="text-green-500">Vin Paribahan</span></h1>
+                <p class="mb-5">Unlock Seamless Transportation Solutions with Us! Explore Efficient Routes, Reliable Services, and Hassle-free Booking. Your Journey Starts Here</p>
+                <button class="btn text-black font-extrabold  bg-green-500">
+                  Buy Tickets
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+    </header>
+
+    <!-- This is main section -->
+    <main class="mt-28 px-3 lg:w-5/6 mt-0 mb-0 mr-auto ml-auto">
+      <h1 class="text-center text-4xl font-bold">Best Offer For You</h1>
+
+      <!-- This is coupon section -->
+      <div class="mt-9 mb-6 flex justify-between">
+        
+        <!-- Coupon-1 -->
+        <div class="flex w-3/4 text-center ">
+
+          <div class="bg-[#ffbf0f] w-2/5 p-2 rounded-md">
+            <div class="mt-9">
+              <h1 class="text-3xl font-bold">15% OFF</h1>
+              <p class="text-lg font-bold">On Your Next Purchase</p>
+              <p class="text-base">Use by January 2024</p>
+            </div>
+          </div>
+
+          <div><img class="bg-[#ffbf0f]" src="./images/cupon-devider.png" alt=""></div>
+
+          <div class="bg-[#ffbf0f] w-2/5 p-2 rounded-md">
+            <div class="mt-12">
+              <h1 class="text-3xl font-bold">NEW15</h1>
+              <p class="text-base">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coupon-2 -->
+        <div class="flex w-3/4 text-center ">
+
+          <div class="bg-[#f78c9c] w-2/5 p-2 rounded-md">
+            <div class="mt-9">
+              <h1 class="text-3xl font-bold">20% OFF</h1>
+              <p class="text-lg font-bold">On Your Next Purchase</p>
+              <p class="text-base">Use by January 2024</p>
+            </div>
+          </div>
+
+          <div><img class="bg-[#f78c9c]" src="./images/cupon-devider.png" alt=""></div>
+
+          <div class="bg-[#f78c9c] w-2/5 p-2 rounded-md">
+            <div class="mt-12">
+              <h1 class="text-3xl font-bold">Couple 20</h1>
+              <p class="text-base">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mr-20 mb-28">
+        <button class="btn btn-outline btn-success">See all offers</button>
+      </div>
+    </main>
 </body>
 </html>
