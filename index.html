@@ -137,7 +137,7 @@
             <div>
               <button class="btn text-green-500 bg-[#1dd1001a]">
                 <img src="./images/seat-green.png" alt="">
-                <span>8</span>Seats left
+                <span id="seat-left">8</span>Seats left
               </button>
             </div>
           </div>
@@ -218,13 +218,13 @@
               </div>
 
               <div class="flex gap-x-4">
-                <button id="A1" class="w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">A1</button>
-                <button id="A2" class="w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">A2</button>
+                <button id="A1" class="seat w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">A1</button>
+                <button id="A2" class="seat w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">A2</button>
               </div>
 
               <div class="flex gap-x-4">
-                <button id="A3" class="w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">A3</button>
-                <button id="A4" class="w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">A4</button>
+                <button id="A3" class="seat w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">A3</button>
+                <button id="A4" class="seat w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">A4</button>
               </div>
             </div>
 
@@ -234,13 +234,13 @@
               </div>
 
               <div class="flex gap-x-4">
-                <button id="B1" class="w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">B1</button>
-                <button id="B2" class="w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">B2</button>
+                <button id="B1" class="seat w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">B1</button>
+                <button id="B2" class="seat w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">B2</button>
               </div>
 
               <div class="flex gap-x-4">
-                <button id="B3" class="w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">B3</button>
-                <button id="B4" class="w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">B4</button>
+                <button id="B3" class="seat w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">B3</button>
+                <button id="B4" class="seat w-[110px] h-[56px] bg-[#0307121a] text-xl text-[#03071280] font-light btn">B4</button>
               </div>
             </div>
           </div>
@@ -254,40 +254,28 @@
           <div class="border-dashed bg-slate-200 border-2 mt-8"></div>
 
           <div class="mt-7 bg-slate-200 p-4 rounded-md">
-            <table class="w-full text-center">
+            <table id="table" class="w-full text-center">
               <tr>
-                <th>Seat <span class="bg-green-500 rounded-full p-1">2</span></th>
+                <th>Seat <span id="seat-count" class="bg-green-500 rounded-full p-1">0</span></th>
                 <th>Class</th>
                 <th>Price</th>
-              </tr>
-              
-              <tr>
-                <td>C2</td>
-                <td>Economy</td>
-                <td>550</td>
-              </tr>
-
-              <tr>
-                <td>C2</td>
-                <td>Economy</td>
-                <td>550</td>
               </tr>
             </table>
           </div>
 
           <div class="flex justify-between mt-5">
             <div class="text-xl w-1/3"><h1 class="text-center">Total Price</h1></div>
-            <div class="text-xl w-1/3"><h1 class="text-center">BDT <span>0</span></h1></div>
+            <div class="text-xl w-1/3"><h1 class="text-center">BDT <span id="total-price" >00</span></h1></div>
           </div>
 
           <div class="mt-7">
-            <input type="text" placeholder="Have any coupon?" class=" input input-bordered w-full max-w-xs" />
-            <button class="w-1/4 btn btn-active bg-green-500">Apply</button>
+            <input id="coupon-code" type="text" placeholder="Have any coupon?" class=" input input-bordered w-full max-w-xs" />
+            <button id="coupon-apply" class="w-1/4 btn btn-active bg-green-500">Apply</button>
           </div>
 
           <div class="flex justify-between mt-5">
             <div class="text-xl w-1/3"><h1 class="text-center">Grand Total</h1></div>
-            <div class="text-xl w-1/3"><h1 class="text-center">BDT <span>0</span></h1></div>
+            <div class="text-xl w-1/3"><h1 class="text-center">BDT <span id="grand-total">00</span></h1></div>
           </div>
 
           <div class="mt-7">
@@ -313,7 +301,8 @@
       </div>
     </section>
 
-    <!id="l>"s section -->
+    <!-- Js section -->
+    <script src="./script/utility.js"></script>
     <script src="./script/smart-ticketing.js"></script>
 </body>
 </html>
