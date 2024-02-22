@@ -6,6 +6,7 @@ const totalPriceFinal = document.getElementById('total-price');
 const grandTotalPrice = document.getElementById('grand-total');
 const couponButton = document.getElementById('coupon-apply');
 const couponCodeText = document.getElementById('coupon-code');
+const couponDiv = document.getElementById('coupon-div');
 
 let selectedSeat = 0;
 let totalSeat = 8;
@@ -57,10 +58,12 @@ function seatSelectionHandler(){
 function couponButtonClick(apply){
   if(couponCodeText.value === 'NEW15'){
     discount = (totalPrice *15)/100;
+    couponDiv.classList.add('hidden');
   }
 
   else if(couponCodeText.value === 'Couple 20'){
     discount = (totalPrice *20)/100;
+    couponDiv.classList.add('hidden');
   }
 
   else {
